@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-15T00:39:57.689Z",
+        "line": 6,
+        "name": "As a librarian, I should be able to add books on API and validate with UI-DB",
+        "description": "",
+        "id": "librarian-add-book-feature;as-a-librarian--i-should-be-able-to-add-books-on-api-and-validate-with-ui-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7726000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user POST - Add a book on API",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.user_post_add_a_book_on_api(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Summer days"
+                ]
+              },
+              {
+                "cells": [
+                  "isbn",
+                  "80807867"
+                ]
+              },
+              {
+                "cells": [
+                  "year",
+                  "2021"
+                ]
+              },
+              {
+                "cells": [
+                  "author",
+                  "Chuck Norris"
+                ]
+              },
+              {
+                "cells": [
+                  "book_category_id",
+                  "4"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Summer jelly bean sweat rain and train."
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8565000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user is logged in and on the Book page",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserIsLoggedInAndOnTheBookPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 350000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user searches book by \"Summer days\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Summer days\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserSearchesBookBy(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5031000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user validates UI and API info about a created book",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserValidatesUIAndAPIInfoAboutACreatedBook()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3454000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user connects with DB, validate API and DB info about book",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserConnectsWithDBValidateAPIAndDBInfoAboutBook()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@G24-180"
+          }
+        ]
+      }
+    ],
+    "name": "Librarian add book feature",
+    "description": "",
+    "id": "librarian-add-book-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddBook.feature",
+    "tags": []
+  }
+]
