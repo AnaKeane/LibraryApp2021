@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/LibraryCT/step_definitions",
+        //"net.serenity_bdd.samples",
         dryRun = false,
         tags = "@G24-180"
 )

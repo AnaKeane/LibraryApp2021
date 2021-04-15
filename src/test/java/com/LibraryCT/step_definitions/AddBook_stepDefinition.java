@@ -13,6 +13,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
+import net.serenitybdd.junit5.SerenityTest;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -24,7 +25,7 @@ import static org.hamcrest.Matchers.*;
 import java.util.Map;
 
 public class AddBook_stepDefinition extends LibraryAppBaseTest {
-BookPojo bookPojo=new BookPojo();
+BookPojo bookPojo;
 LoginPage loginPage=new LoginPage();
 Map<String, Object> newBookDataMap;
 LibrarianDashBoardPage librarianDashBoardPage=new LibrarianDashBoardPage();

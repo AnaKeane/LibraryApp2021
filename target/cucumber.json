@@ -1,10 +1,10 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-04-15T00:39:57.689Z",
-        "line": 6,
+        "start_timestamp": "2021-04-15T17:09:48.161Z",
+        "line": 8,
         "name": "As a librarian, I should be able to add books on API and validate with UI-DB",
         "description": "",
         "id": "librarian-add-book-feature;as-a-librarian--i-should-be-able-to-add-books-on-api-and-validate-with-ui-db",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7726000000,
+              "duration": 8927000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "user POST - Add a book on API",
             "match": {
               "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.user_post_add_a_book_on_api(io.cucumber.datatable.DataTable)"
@@ -63,10 +63,10 @@
           },
           {
             "result": {
-              "duration": 8565000000,
+              "duration": 7586000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 17,
             "name": "the user is logged in and on the Book page",
             "match": {
               "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserIsLoggedInAndOnTheBookPage()"
@@ -75,10 +75,10 @@
           },
           {
             "result": {
-              "duration": 350000000,
+              "duration": 451000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 18,
             "name": "the user searches book by \"Summer days\"",
             "match": {
               "arguments": [
@@ -93,10 +93,10 @@
           },
           {
             "result": {
-              "duration": 5031000000,
+              "duration": 5042000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 19,
             "name": "the user validates UI and API info about a created book",
             "match": {
               "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserValidatesUIAndAPIInfoAboutACreatedBook()"
@@ -105,10 +105,10 @@
           },
           {
             "result": {
-              "duration": 3454000000,
+              "duration": 920000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 20,
             "name": "the user connects with DB, validate API and DB info about book",
             "match": {
               "location": "com.LibraryCT.step_definitions.AddBook_stepDefinition.theUserConnectsWithDBValidateAPIAndDBInfoAboutBook()"
