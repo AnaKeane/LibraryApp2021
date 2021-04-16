@@ -110,8 +110,6 @@ int newBookId;
         Map<String,String> dbResultMap =  DB_Utility.getRowMap(1) ;
         System.out.println("dbResultMap = " + dbResultMap);
 
-        //randomBookMapBody = {year=1682, author=Myrtis Barrows IV, isbn=71104517, name=Noli Me Tangere, description=There is nothing regular about Chuck Norris' expressions., book_category_id=13}
-        //dbResultMap =       {id=3133, name=Noli Me Tangere, isbn=71104517, year=1682, author=Myrtis Barrows IV, book_category_id=13, description=There is nothing regular about Chuck Norris' expressions., added_date=2021-04-09 18:54:16}
         assertThat(dbResultMap.get("name") , is(newBookDataMap.get("name"))   ) ;
         // keep going and do the rest , or find a better way.
 
