@@ -85,20 +85,20 @@ int newBookId;
     public void theUserValidatesUIAndAPIInfoAboutACreatedBook() {
         //UI_BookName=librarianBookPage.bookName.getText();
         BrowserUtils.sleep(5);
-        assertThat(newBookDataMap.get("name"), is(librarianBookPage.bookName.getText()));
-//
-//        bookPojo=
-//                given()
-//
-//                        .header("x-library-token",token)
-//                        .pathParam("id", newBookId).
-//
-//                        when()
-//                        .get("/get_book_by_id/{id}")
-//
-//                        .as(BookPojo.class);
-//
-//        assertThat(bookPojo.getName(), is(UI_BookName));
+       // assertThat(newBookDataMap.get("name"), is(librarianBookPage.bookName.getText()));
+
+        bookPojo=
+                given()
+
+                        .header("x-library-token",token)
+                        .pathParam("id", newBookId).
+
+                        when()
+                        .get("/get_book_by_id/{id}")
+
+                        .as(BookPojo.class);
+
+        assertThat(bookPojo.getName(), is(librarianBookPage.bookName.getText()));
 
     }
 

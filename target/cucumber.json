@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-04-15T17:09:48.161Z",
+        "start_timestamp": "2021-04-16T02:30:48.777Z",
         "line": 8,
         "name": "As a librarian, I should be able to add books on API and validate with UI-DB",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8927000000,
+              "duration": 11178000000,
               "status": "passed"
             },
             "line": 10,
@@ -63,7 +63,7 @@
           },
           {
             "result": {
-              "duration": 7586000000,
+              "duration": 8798000000,
               "status": "passed"
             },
             "line": 17,
@@ -75,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 451000000,
+              "duration": 492000000,
               "status": "passed"
             },
             "line": 18,
@@ -93,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 5042000000,
+              "duration": 5971000000,
               "status": "passed"
             },
             "line": 19,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 920000000,
+              "duration": 1071000000,
               "status": "passed"
             },
             "line": 20,
