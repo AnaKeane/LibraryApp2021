@@ -39,13 +39,7 @@ int newBookId;
 
     public void user_post_add_a_book_on_api(io.cucumber.datatable.DataTable dataTable) {
 
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
+
         newBookDataMap=dataTable.asMap(String.class, Object.class);
 
         newBookId=
@@ -111,6 +105,9 @@ int newBookId;
         System.out.println("dbResultMap = " + dbResultMap);
 
         assertThat(dbResultMap.get("name") , is(newBookDataMap.get("name"))   ) ;
+        assertThat(dbResultMap.get("name") , is(bookPojo.getName()   ) );
+        assertThat(dbResultMap.get("name") , is(librarianBookPage.bookName.getText()) ) ;
+
         // keep going and do the rest , or find a better way.
 
     }
