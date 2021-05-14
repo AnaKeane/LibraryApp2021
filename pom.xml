@@ -66,8 +66,8 @@
                         </goals>
                         <configuration>
                             <projectName>Cucumber HTML Reports</projectName>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <outputDirectory>${project.build.directory}/cucumber-maven-report</outputDirectory>
+                            <inputDirectory>${project.build.directory}/cucumber-json</inputDirectory>
                             <jsonFiles>
                                 <param>**/cucumber*.json</param>
                             </jsonFiles>

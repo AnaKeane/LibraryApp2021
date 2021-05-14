@@ -6,6 +6,7 @@ import com.LibraryCT.pages.LibrarianDashBoardPage;
 import com.LibraryCT.pages.LoginPage;
 import com.LibraryCT.utilities.BrowserUtils;
 import com.LibraryCT.utilities.DB_Utility;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -62,7 +63,9 @@ public class API_AddNewBook extends LibraryAppBaseTest {
         System.out.println("UI_BookName = " + UI_BookName);
         assertThat(randomBookMapBody.get("name"),is(UI_BookName));
 
+
     }
+
 
 
 
