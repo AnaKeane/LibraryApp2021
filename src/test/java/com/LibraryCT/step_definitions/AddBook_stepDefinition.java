@@ -97,7 +97,7 @@ int newBookId;
     @Then("the user connects with DB, validate API and DB info about book")
     public void theUserConnectsWithDBValidateAPIAndDBInfoAboutBook() {
         DB_Utility.createConnection();
-       DB_Utility.runQuery("SELECT * FROM books where id = " + newBookId ) ;
+        DB_Utility.runQuery("SELECT * FROM books where id = " + newBookId ) ;
 
         Map<String,String> dbResultMap =  DB_Utility.getRowMap(1) ;
         System.out.println("dbResultMap = " + dbResultMap);
